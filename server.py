@@ -3,9 +3,9 @@ import random
 import socket
 from xml.etree.ElementTree import tostring
 #host info constants
-HOST = socket.gethostbyname(socket.gethostname())
+HOST = socket.gethostbyname(socket.gethostname()) # grab containers internal ip and set to host value
 PORT = 55555  
-print(HOST+":"+PORT)
+print(HOST+":"+PORT) #print ip for connection
 
 #validation code, this could be expanded to search an entire database rather than use hardcoded values
 def validate(datatoval):

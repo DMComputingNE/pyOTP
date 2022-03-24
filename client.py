@@ -4,7 +4,7 @@ import hashlib
 s = socket.socket()#create socket 
 #unlike the server .py, these server info are stored in variables to allow further expansion of the software for inputting an IP address instead of hard coding
 port = 55555
-ip='127.0.0.1'
+ip=input("enter the ip: ")
 s.connect((ip, port))
 ##user input collection
 name = input("What is your username: ")
