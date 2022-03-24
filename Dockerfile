@@ -1,7 +1,7 @@
 FROM python:3-alpine
-WORKDIR /usr/src/app
 EXPOSE 55555
+WORKDIR /app
 RUN apk update
-RUN apk add git
-RUN git clone https://github.com/DMcomputingNE/pyOTP
+RUN apk add wget
+RUN wget raw.githubusercontent.com/DMComputingNE/pyOTP/main/server.py
 CMD [ "python", "server.py" ]
