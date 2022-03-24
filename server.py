@@ -34,6 +34,7 @@ def Recieve():
                     conn.sendall(b"Incorrect username/password")#inform user of wrong pass
 while(1):#main loop to handle multiple connections in a row
     try:#simple exception handling
+        print("running")
         Recieve() #call main function
     except:
         print("Something went wrong.")#exception message on server terminal
