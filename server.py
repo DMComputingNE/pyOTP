@@ -3,8 +3,9 @@ import random
 import socket
 from xml.etree.ElementTree import tostring
 #host info constants
-HOST = "127.0.0.1"
+HOST = socket.gethostbyname(socket.gethostname())
 PORT = 55555  
+print(HOST+":"+PORT)
 
 #validation code, this could be expanded to search an entire database rather than use hardcoded values
 def validate(datatoval):
